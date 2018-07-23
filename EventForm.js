@@ -7,7 +7,7 @@ import {
 
 class EventForm extends Component{
     handleAddPress = () => {
-        //?
+        this.props.navigation.navigate('list');
     }
 
 
@@ -23,3 +23,5 @@ class EventForm extends Component{
         );
     }
 }
+
+export default EventForm;
