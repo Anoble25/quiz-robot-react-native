@@ -11,7 +11,16 @@ import {
 } from './api';
 
 const styles = StyleSheet.create({
-
+    card: {
+        backgroundColor: '#fff',
+        flex: 1,
+        padding: 10,
+        paddingTop: 18,
+        paddingBottom: 20,
+        margin: 10,
+        marginTop: 5,
+        marginBottom: 5,
+    },
 });
 
 export default function EventCard ({ event}) {
