@@ -1,20 +1,26 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import EventList from './EventList';
+import EventForm from './EventForm';
+//import { YellowBox } from 'react-native';
+import { StackNavigator } from 'react-navigation';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <EventList/>
-    );
-  }
-}
+// YellowBox.ignoreWarnings([
+//   'Warning: StackNavigator is deprecated',
+// ]);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#2ECC71',
-    alignItems: 'center',
-    justifyContent: 'center',
+
+export default StackNavigator({
+  list: {
+    screen: EventList,
+    navigationOptions: () => ({
+      title: 'Your Events',
+    }),
+  },
+  form: {
+    screen: EventForm,
+    navigationOptions: () => ({
+      title: 'Add an event',
+    }),
   },
 });
