@@ -10,6 +10,8 @@ import {
     getCountdownParts,
 } from './api';
 
+//rename file to fix error
+
 const styles = StyleSheet.create({
     card: {
         backgroundColor: '#fff',
